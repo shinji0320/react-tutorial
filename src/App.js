@@ -4,6 +4,7 @@ import { Form } from "./Form";
 import styled from 'styled-components';
 import { getLanguages } from "./const/languages";
 import { withLoading } from "./hoc/withLoading";
+import { Modal } from "./components//modal";
 
 
 const Header = styled.header`
@@ -49,6 +50,7 @@ function App({ data }) {
       {
         tab === 'list' ? <List langs={langs}/> : <Form onAddLang={addLang}/>
       }
+      <Modal />
     </div>
   );
 }

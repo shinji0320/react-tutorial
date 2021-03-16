@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 
 const LoadDiv = styled.div`
-  padding: 36;
+  padding: 36px;
 `
 
 export const withLoading = (WrappedComponent, fetchData) => {
