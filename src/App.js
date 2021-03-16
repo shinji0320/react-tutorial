@@ -50,7 +50,6 @@ function App({ data }) {
       {
         tab === 'list' ? <List langs={langs}/> : <Form onAddLang={addLang}/>
       }
-      <Modal />
     </div>
   );
 }
