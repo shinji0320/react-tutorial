@@ -22,6 +22,12 @@ const ButtonContainer = styled.div`
   margin-top: 24px;
 `
 
+const FormButton = styled(Button)`
+  width: 120px;
+`
+
+
+
 
 export const Form = ({ onAddLang }) => {
   const [text, setText] = useState('');
@@ -44,7 +50,7 @@ export const Form = ({ onAddLang }) => {
             />
         </div>
         <ButtonContainer>
-          <Button>追加</Button>
+          <FormButton>追加</FormButton>
         </ButtonContainer>
       </form>
     </Container>
